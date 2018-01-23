@@ -50,7 +50,7 @@ public class Main {
                     FileParam.getDirectory(new File(s));
                 }
                 try {
-                    FileParam.tongji(str,UTime.getDateFromStr(UTime.Pattern.y_m_d,start).getTime(),UTime.getDateFromStr(UTime.Pattern.y_m_d,start).getTime());
+                    FileParam.tongji(str,UTime.getDateFromStr(UTime.Pattern.y_m_d,start).getTime(),UTime.getDateFromStr(UTime.Pattern.y_m_d,end).getTime());
                 } catch (Exception n) {
                     n.printStackTrace();
                 }

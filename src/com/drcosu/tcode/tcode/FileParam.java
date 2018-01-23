@@ -55,11 +55,14 @@ public class FileParam {
     }
 
     public static void read(String s,String param,String name){
-        for(int i=-1; i<=s.lastIndexOf(param);++i)
-        {
-            i=s.indexOf(param,i);
-            if(i!=-1){
-                Main.str.get(name).add(s.substring(i+14,i+23));
+        int cls = s.indexOf(param);
+        if(cls!=-1){
+            for(int i=-1; i<=s.lastIndexOf(param);++i)
+            {
+                i=s.indexOf(param,i);
+                if(i!=-1){
+                    Main.str.get(name).add(s.substring(i+14,i+23));
+                }
             }
         }
 
