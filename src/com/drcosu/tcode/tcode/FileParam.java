@@ -61,7 +61,10 @@ public class FileParam {
             {
                 i=s.indexOf(param,i);
                 if(i!=-1){
-                    Main.str.get(name).add(s.substring(i+14,i+23));
+                    String ms = s.substring(i+14,i+25);
+                    ms = ms.replace("\"","");
+                    ms = ms.replace(")","");
+                    Main.str.get(name).add(ms);
                 }
             }
         }
